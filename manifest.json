@@ -1,10 +1,17 @@
 {
-  "name": "Trello Compact Cards",
-  "description": "Make those cards less noisy!",
-  "version": "1.0",
+  "name": "Trello Clean Up",
+  "version": "0.1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+      "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"]
+  "permissions": [
+      "storage",
+      "activeTab",
+      "scripting",
+      "tabs"
+  ],
+  "host_permissions": [
+      "https://trello.com/c/*"
+  ]
 }
