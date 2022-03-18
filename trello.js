@@ -1,31 +1,36 @@
+//hide sidebar
+var windowSidebarPanel = document.getElementsByClassName("window-sidebar")[0];
+windowSidebarPanel.style.display = "none";
+
+//shoten window
+var windowFrame = document.getElementsByClassName("window")[0];
+windowFrame.style.width = "600px";
+
 //find a position for the controller button
-let position = document.getElementsByClassName("window-header js-card-detail-header")[0];
+var position = document.getElementsByClassName("window-header js-card-detail-header")[0];
 
 //create a div for the button to sit in
-let sidebarControllerContainer = document.createElement("div");
+var sidebarControllerContainer = document.createElement("div");
 sidebarControllerContainer.classList.add("window-header-inline-content");
 
 //place the div on the page
 position.append(sidebarControllerContainer);
 
 //place the link in the div
-sidebarControllerContainer.innerHTML = '<a class="quiet" href="#" id="sidebarController">Hide Sidebar</a>';
+sidebarControllerContainer.innerHTML = '<a class="quiet" href="#" id="sidebarController">Show Sidebar</a>';
 
 //create a variable for the link
-let sidebarController = document.getElementById("sidebarController");
+var sidebarController = document.getElementById("sidebarController");
 
 //funtion to run on click
 sidebarController.onclick = function () {
-  let windowSidebar = document.getElementsByClassName("window-sidebar")[0];
-  let window = document.getElementsByClassName("window")[0];
-
-  if (windowSidebar.style.display === "none") {
-    windowSidebar.style.display = "";
-    window.style.width = "";
+  if (windowSidebarPanel.style.display === "none") {
+    windowSidebarPanel.style.display = "";
+    windowFrame.style.width = "";
     sidebarController.innerHTML = "Hide Sidebar"
   } else {
-    windowSidebar.style.display = "none";
-    window.style.width = "600px";
+    windowSidebarPanel.style.display = "none";
+    windowFrame.style.width = "600px";
     sidebarController.innerHTML = "Show Sidebar"
-  }
+  };
 };

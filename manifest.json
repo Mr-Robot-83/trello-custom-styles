@@ -1,19 +1,18 @@
-{
-    "name": "Trello Card Clean Up",
+  {
+    "name": "Trello compact cards",
+    "description": "Clean up them cards!",
     "version": "1",
-    "manifest_version": 2,
-    "description": "Clean up dem cards...",
+    "manifest_version": 3,
     "background": {
-      "scripts": [
-        "background.js"
-      ],
-      "persistent": true
-    },
-    "browser_action": {
-      "default_title": "Inject!"
+        "service_worker": "background.js"
     },
     "permissions": [
-      "https://trello.com/c/*",
+      "storage",
+      "activeTab",
+      "scripting",
       "tabs"
+    ],
+    "host_permissions": [
+        "https://trello.com/*"
     ]
-  }
+}
