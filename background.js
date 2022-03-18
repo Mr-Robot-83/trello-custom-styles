@@ -1,13 +1,8 @@
 // background.js
 
-chrome.runtime.onInstalled.addListener(() => {
-  // default state goes here
-  // this runs ONE TIME ONLY (unless the user reinstalls your extension)
-});
-
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  chrome.scripting.executeScript({
-    target: { tabId: tabId },
-    files: ["trello.js"]
-  })
+chrome.browserAction.onClicked.addListener(function (tab) {
+	// for the current tab, inject the "inject.js" file & execute it
+	chrome.tabs.executeScript(tab.ib, {
+		file: 'trello.js'
+	});
 });
