@@ -1,0 +1,17 @@
+.trello-compact-cards .everhour-edit-time-popup{
+  margin-left:170px;
+}
+
+.trello-compact-cards .phenom-reactions,
+.trello-compact-cards .everhour-progress-container,
+.trello-compact-cards .window-sidebar,
+.trello-compact-cards .js-edit-desc-button,
+.trello-compact-cards .window-module-title-options,
+.trello-compact-cards .js-card-detail-header,
+.trello-compact-cards .card-detail-item .js-card-detail-age {
+  display: none !important;
+}
+
+.trello-compact-cards .window {
+  width: 590px;
+}

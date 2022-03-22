@@ -1,7 +1,7 @@
   {
     "name": "Trello compact cards",
     "description": "Clean up them cards!",
-    "version": "1",
+    "version": "1.3",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
@@ -13,6 +13,6 @@
       "tabs"
     ],
     "host_permissions": [
-        "https://trello.com/*"
+        "https://trello.com/c/*"
     ]
 }
