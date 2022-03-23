@@ -6,13 +6,9 @@
     "background": {
         "service_worker": "background.js"
     },
-    "permissions": [
-      "storage",
-      "activeTab",
-      "scripting",
-      "tabs"
-    ],
-    "host_permissions": [
-        "https://trello.com/c/*"
-    ]
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "host_permissions": ["https://trello.com/*"],
+    "action": {
+      "default_popup": "popup.html"
+    }
 }

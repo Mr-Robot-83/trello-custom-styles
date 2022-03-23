@@ -1,5 +1,5 @@
 .trello-compact-cards .everhour-edit-time-popup{
-  margin-left:170px;
+  margin-left:185px;
 }
 
 .trello-compact-cards .phenom-reactions,
@@ -7,11 +7,21 @@
 .trello-compact-cards .window-sidebar,
 .trello-compact-cards .js-edit-desc-button,
 .trello-compact-cards .window-module-title-options,
-.trello-compact-cards .js-card-detail-header,
-.trello-compact-cards .card-detail-item .js-card-detail-age {
+.trello-compact-cards .card-detail-item.js-card-detail-age,
+.trello-compact-cards .js-show-with-desc.js-edit-desc.js-edit-desc-button {
   display: none !important;
 }
 
 .trello-compact-cards .window {
-  width: 590px;
+  width: 585px;
+}
+
+.trello-custom-styles .action-comment {
+  padding: 6px;
+  line-height: 140%;
+  font-size: 15px;
+}
+
+.trello-custom-styles .action-comment p {
+  margin-bottom: 15px;
 }

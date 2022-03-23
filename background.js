@@ -10,3 +10,9 @@ chrome.tabs.onUpdated.addListener(function injectScript(tabId, changeInfo) {
 		})
 	}
 });
+
+let checkboxOneStatus = false;
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ checkboxOneStatus });
+});

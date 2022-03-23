@@ -1,36 +1,26 @@
-//hide sidebar
-// var windowSidebarPanel = document.getElementsByClassName("window-sidebar")[0];
-// windowSidebarPanel.style.display = "none";
+//trello.js. - This script is injected each time the trello URL is updated via the background.js file
 
-// //reduce window width
-// var windowFrame = document.getElementsByClassName("window")[0];
-// windowFrame.style.width = "600px";
 
-// //remove "last update" text from window
-// var lastUpdate = document.getElementsByClassName("card-detail-item js-card-detail-age")[0];
-// lastUpdate.style.display = "none";
-
-// //remove edit button from description tab
-// var editDescriptionButton = document.getElementsByClassName("nch-button ml-4 hide-on-edit js-show-with-desc js-edit-desc js-edit-desc-button")[0];
-// editDescriptionButton.style.display = "none";
+//COMPACT CARD STYLING ----------
+//This automatically applies the compact card styling when a card is loaded and adds a toggle link to swith back to normal card view. 
 
 //find a position for the controller button
-var position = document.getElementsByClassName("window-header js-card-detail-header")[0];
+var controllerPosition = document.getElementsByClassName("window-header js-card-detail-header")[0];
 
 //create a div for the button to sit in
 var sidebarControllerContainer = document.createElement("div");
 sidebarControllerContainer.classList.add("window-header-inline-content");
 
 //place the div on the page
-position.append(sidebarControllerContainer);
+controllerPosition.append(sidebarControllerContainer);
 
 //place the link in the div
-sidebarControllerContainer.innerHTML = '<a class="quiet" href="#" id="sidebarController">Switch to normal view</a></div>';
+sidebarControllerContainer.innerHTML = '<a class="quiet" href="#" id="sidebarController">Switch to normal view</a>';
 
 //create a variable for the link
 var sidebarController = document.getElementById("sidebarController");
 
-//add custom CSS!
+//add compact card CSS
 document.body.classList.add("trello-compact-cards");
 
 //funtion to run on click
@@ -43,4 +33,17 @@ sidebarController.onclick = function () {
     document.body.classList.add("trello-compact-cards");
   };
 };
+// END OF COMPACT CARD STYLING ----------
 
+// BIG COMMENTS CHECKBOX ----------
+// This looks for the value of the big comments checkbox which is stored in Chrome. If the box is checked, it will adds a css class to the body element to activate the styles on the appropriate page elements.
+
+//look for checkboxOne value and apply styles if checked
+chrome.storage.sync.get(['checkboxOneStatus'], function(result) {
+  console.log('Value currently is ' + result.checkboxOneStatus);
+  if (result.checkboxOneStatus) {
+  document.body.classList.add("trello-custom-styles");
+  }
+});
+
+// END OF COMMENTS CHECKBOX ----------
