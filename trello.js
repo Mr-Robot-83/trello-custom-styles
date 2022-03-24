@@ -38,11 +38,22 @@ sidebarController.onclick = function () {
 // BIG COMMENTS CHECKBOX ----------
 // This looks for the value of the big comments checkbox which is stored in Chrome. If the box is checked, it will adds a css class to the body element to activate the styles on the appropriate page elements.
 
-//look for checkboxOne value and apply styles if checked
-chrome.storage.sync.get(['checkboxOneStatus'], function(result) {
-  console.log('Value currently is ' + result.checkboxOneStatus);
-  if (result.checkboxOneStatus) {
-  document.body.classList.add("trello-custom-styles");
+//look for bigCommentsCheckbox value and apply styles if checked
+chrome.storage.sync.get(['bigCommentsCheckboxStatus'], function(result) {
+  if (result.bigCommentsCheckboxStatus) {
+  document.body.classList.add("trello-big-comments");
+  }
+});
+
+// END OF COMMENTS CHECKBOX ----------
+
+
+// DARK CARDS CHECKBOX ----------
+
+//look for darkCardsCheckbox value and apply styles if checked
+chrome.storage.sync.get(['darkCardsCheckboxStatus'], function(result) {
+  if (result.darkCardsCheckboxStatus) {
+  document.body.classList.add("trello-dark-cards");
   }
 });
 

@@ -16,12 +16,16 @@
   width: 585px;
 }
 
-.trello-custom-styles .action-comment {
+.trello-big-comments .action-comment {
   padding: 6px;
   line-height: 140%;
   font-size: 15px;
 }
 
-.trello-custom-styles .action-comment p {
+.trello-big-comments .action-comment p {
   margin-bottom: 15px;
+}
+
+.trello-dark-cards .window{
+  background-color: rgb(20, 20, 20);
 }

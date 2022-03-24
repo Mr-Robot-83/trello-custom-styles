@@ -11,8 +11,14 @@ chrome.tabs.onUpdated.addListener(function injectScript(tabId, changeInfo) {
 	}
 });
 
-let checkboxOneStatus = false;
+let bigCommentsCheckboxStatus = false;
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ checkboxOneStatus });
+  chrome.storage.sync.set({ bigCommentsCheckboxStatus });
+});
+
+let darkCardsCheckboxStatus = false;
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ darkCardsCheckboxStatus });
 });
