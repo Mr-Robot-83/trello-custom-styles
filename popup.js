@@ -1,15 +1,19 @@
-//set IDs for checkboxes
+//Set IDs for checkboxes
 let bigCommentsCheckbox = document.getElementById('big-comments');
 let darkCardsCheckbox = document.getElementById('dark-cards');
 
 
-//get value of checkboxes from Chrome storage
-chrome.storage.sync.get("bigCommentsCheckboxStatus", ({ bigCommentsCheckboxStatus }) => {
-  bigCommentsCheckbox.checked = bigCommentsCheckboxStatus
+//Get value of checkboxes from Chrome storage and apply to checkboxes
+//This will ensure the values remain when the popup is closed and reopened
+//Should also sync in all the user's browsers!
+chrome.storage.sync.get('bigCommentsCheckboxStatus', function(result) {
+  darkCardsCheckbox.checked = result.bigCommentsCheckboxStatus;
+  console.log(`Value of ${bigCommentsCheckbox.id} currently is ${result.darkCardsCheckboxStatus}`);
 });
 
-chrome.storage.sync.get("darkCardsCheckboxStatus", ({ darkCardsCheckboxStatus }) => {
-  darkCardsCheckbox.checked = darkCardsCheckboxStatus
+chrome.storage.sync.get('darkCardsCheckboxStatus', function(result) {
+  darkCardsCheckbox.checked = result.darkCardsCheckboxStatus;
+  console.log(`Value of ${darkCardsCheckbox.id} currently is ${result.darkCardsCheckboxStatus}`);
 });
 
 //Evemt listeners for each check box. If else statement updates Google storage with the check box status.
