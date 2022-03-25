@@ -12,6 +12,7 @@ chrome.storage.sync.get("darkCardsCheckboxStatus", ({ darkCardsCheckboxStatus })
   darkCardsCheckbox.checked = darkCardsCheckboxStatus
 });
 
+//Evemt listeners for each check box. If else statement updates Google storage with the check box status.
 bigCommentsCheckbox.addEventListener('change', () => {
   activateCheckbox(bigCommentsCheckbox,'trello-big-comments')
   if (bigCommentsCheckbox.checked) {

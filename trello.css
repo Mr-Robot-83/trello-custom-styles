@@ -26,6 +26,32 @@
   margin-bottom: 15px;
 }
 
-.trello-dark-cards .window{
-  background-color: rgb(20, 20, 20);
+.trello-dark-cards .window {
+  background-color: #282a36;
+}
+
+.trello-dark-cards .mod-card-back-title.js-card-detail-title-input,
+.trello-dark-cards .window-module-title,
+.trello-dark-cards .window-module-title h3,
+.trello-dark-cards .inline-member {
+  color: #f8f8f2;
+}
+.trello-dark-cards .icon-lg,
+.trello-dark-cards .icon-md,
+.trello-dark-cards .icon-sm,
+.trello-dark-cards .quiet, 
+.trello-dark-cards .quiet a  {
+  color: #6272a4;
+}
+
+.trello-dark-cards .action-comment,
+.trello-dark-cards .mod-card-back-title.js-card-detail-title-input:focus {
+  background-color: #44475a;
+  box-shadow: none;
+  color: #f8f8f2;
+}
+
+.trello-dark-cards .quiet a:not(.disabled):hover,
+.trello-dark-cards .quiet a:hover {
+  color: #8be9fd;
 }
