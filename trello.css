@@ -1,4 +1,5 @@
-.trello-compact-cards .everhour-edit-time-popup{
+.trello-compact-cards .everhour-edit-time-popup, 
+.trello-compact-cards .everhour-trello-popover {
   margin-left:185px;
 }
 
@@ -26,32 +27,131 @@
   margin-bottom: 15px;
 }
 
-.trello-dark-cards .window {
+
+.trello-dark-cards .window,
+.trello-dark-cards .window textarea {
   background-color: #282a36;
+  color: #dadad6;
 }
 
-.trello-dark-cards .mod-card-back-title.js-card-detail-title-input,
-.trello-dark-cards .window-module-title,
-.trello-dark-cards .window-module-title h3,
-.trello-dark-cards .inline-member {
-  color: #f8f8f2;
+.trello-dark-cards .window .atMention.me {
+  color: #50fa7b;
 }
-.trello-dark-cards .icon-lg,
-.trello-dark-cards .icon-md,
-.trello-dark-cards .icon-sm,
-.trello-dark-cards .quiet, 
-.trello-dark-cards .quiet a  {
+
+.trello-dark-cards .window .atMention {
+  color: #ff79c6;
+}
+
+.trello-dark-cards .window .description-content,
+.trello-dark-cards .window .conversation,
+.trello-dark-cards .window .description-edit .helper,
+.trello-dark-cards .window .everhour-progress,
+.trello-dark-cards .window .mod-card-back-title.js-card-detail-title-input,
+.trello-dark-cards .window .window-module-title,
+.trello-dark-cards .window .window-module-title h3,
+.trello-dark-cards .window .inline-member {
+  color: #dadad6;
+}
+.trello-dark-cards .window .known-service-link,
+.trello-dark-cards .window .css-9ur838 {
+  background-color: rgba(255, 255, 255, 0);
+  color: #6272a4;
+  box-shadow: none;
+  text-decoration: underline !important;
+}
+
+.trello-dark-cards .window .known-service-link:hover,
+.trello-dark-cards .window .css-9ur838:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #8be9fd !important;
+  text-decoration: underline !important;
+  box-shadow: none !important;
+}
+
+
+
+.trello-dark-cards .window a,
+.trello-dark-cards .window .checklist-new-item.editing textarea.checklist-new-item-text::placeholder,
+.trello-dark-cards .window .comment-unfurl-subtext,
+.trello-dark-cards .window .icon-add-reaction.reactions-add-icon,
+.trello-dark-cards .window .window-sidebar h3,
+.trello-dark-cards .window .js-date-range-picker.button-link-container .jKipYA,
+.trello-dark-cards .window .js-custom-fields.button-link .ifeHxY,
+.trello-dark-cards .window .everhour-progress i,
+.trello-dark-cards .window .icon-lg,
+.trello-dark-cards .window .icon-md,
+.trello-dark-cards .window .icon-sm,
+.trello-dark-cards .window .nch-icon,
+.trello-dark-cards .window .quiet, 
+.trello-dark-cards .window .card-detail-item-header,
+.trello-dark-cards .window .quiet a {
   color: #6272a4;
 }
 
-.trello-dark-cards .action-comment,
-.trello-dark-cards .mod-card-back-title.js-card-detail-title-input:focus {
-  background-color: #44475a;
-  box-shadow: none;
-  color: #f8f8f2;
+.trello-dark-cards .window .comment-frame .comment-box .comment-box-input.js-new-comment-input {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: #dadad6;
 }
 
-.trello-dark-cards .quiet a:not(.disabled):hover,
-.trello-dark-cards .quiet a:hover {
+.trello-dark-cards .window .phenom.mod-highlighted {
+  background-color: rgba(255, 255, 255, 0);
+  border-left-color: #f1fa8c;
+}
+
+.trello-dark-cards .window .checklist-item-checkbox,
+.trello-dark-cards .window .card-detail-badge-due-date-complete-box {
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 0 0 0 1px #6272a4;
+}
+
+.trello-dark-cards .window .checklist-item-checkbox:hover,
+.trello-dark-cards .window .card-detail-badge-due-date-complete-box:hover {
+  background-color: #6272a4;
+  box-shadow: inset 0 0 0 1px #6272a4;
+}
+
+.trello-dark-cards .window .checklist-new-item.editing textarea.checklist-new-item-text,
+.trello-dark-cards .window .comment-unfurl,
+.trello-dark-cards .window .custom-field-detail-badge,
+.trello-dark-cards .window ._3TTqkG5muwOzqZ,
+.trello-dark-cards .window .comment-frame,
+.trello-dark-cards .window .description-fake-text-area,
+.trello-dark-cards .window .field.field-autosave.js-description-draft.description.card-description,
+.trello-dark-cards .window .js-date-range-picker.button-link-container button,
+.trello-dark-cards .window .js-custom-fields.button-link button,
+.trello-dark-cards .window .button-link,
+.trello-dark-cards .window .nch-button,
+.trello-dark-cards .window .everhour-progress-view .card-label,
+.trello-dark-cards .window .card-detail-item-add-button,
+.trello-dark-cards .window .card-detail-badge,
+.trello-dark-cards .window .action-comment,
+.trello-dark-cards .window .mod-card-back-title.js-card-detail-title-input:focus {
+  background-color: #6273a41a;
+  box-shadow: none;
+  color: #dadad6;
+}
+
+.trello-dark-cards .window .comment-unfurl:hover,
+.trello-dark-cards .window .custom-field-detail-badge:hover,
+.trello-dark-cards .window ._3TTqkG5muwOzqZ:hover,
+.trello-dark-cards .window .description-fake-text-area a,
+.trello-dark-cards .window .description-fake-text-area:hover,
+.trello-dark-cards .window .js-date-range-picker.button-link-container button:hover,
+.trello-dark-cards .window .js-custom-fields.button-link button:hover,
+.trello-dark-cards .window .button-link:hover,
+.trello-dark-cards .window .nch-button:hover,
+.trello-dark-cards .window .everhour-progress-view .card-label:hover,
+.trello-dark-cards .window .card-detail-item-add-button:hover {
+  background-color: #6272a42b;
+  color: #8be9fd;
+}
+
+.trello-dark-cards .window .dark-hover:hover .icon-sm,
+.trello-dark-cards .window a:hover,
+.trello-dark-cards .window .dark-hover:hover,
+.trello-dark-cards .window .icon-add-reaction.reactions-add-icon:hover,
+.trello-dark-cards .window .window-header-inline-content a:hover,
+.trello-dark-cards .window .quiet a:not(.disabled):hover,
+.trello-dark-cards .window .quiet a:hover {
   color: #8be9fd;
 }

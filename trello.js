@@ -1,6 +1,5 @@
 //trello.js. - This script is injected each time the trello URL is updated via the background.js file
 
-
 //COMPACT CARD STYLING 
 //This automatically applies the compact card styling when a card is loaded and adds a toggle link to swith back to normal card view. 
 
