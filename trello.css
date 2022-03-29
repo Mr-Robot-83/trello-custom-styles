@@ -84,7 +84,10 @@
 .trello-dark-cards .window .nch-icon,
 .trello-dark-cards .window .quiet, 
 .trello-dark-cards .window .card-detail-item-header,
-.trello-dark-cards .window .quiet a {
+.trello-dark-cards .window .quiet a,
+.trello-dark-cards .window .ifeHxY,
+.trello-dark-cards .window .jKipYA,
+.trello-dark-cards .window .checklist-item-state-complete .checklist-item-details-text {
   color: #6272a4;
 }
 
@@ -109,7 +112,9 @@
   background-color: #6272a4;
   box-shadow: inset 0 0 0 1px #6272a4;
 }
-
+.trello-dark-cards .window .attachment-thumbnail,
+.trello-dark-cards .window .subtle.button,
+.trello-dark-cards .window .checklist-item .edit .field:active,
 .trello-dark-cards .window .checklist-new-item.editing textarea.checklist-new-item-text,
 .trello-dark-cards .window .comment-unfurl,
 .trello-dark-cards .window .custom-field-detail-badge,
@@ -131,6 +136,15 @@
   color: #dadad6;
 }
 
+.trello-dark-cards .window .checklist-item {
+  background-color: rgba(255, 255, 255, 0);
+  color: #dadad6;
+}
+
+.trello-dark-cards .window .attachment-thumbnail:hover,
+.trello-dark-cards .window .subtle.button:hover,
+.trello-dark-cards .window .ifeHxY:hover,
+.trello-dark-cards .window .checklist-item:hover,
 .trello-dark-cards .window .comment-unfurl:hover,
 .trello-dark-cards .window .custom-field-detail-badge:hover,
 .trello-dark-cards .window ._3TTqkG5muwOzqZ:hover,
@@ -146,6 +160,9 @@
   color: #8be9fd;
 }
 
+.trello-dark-cards .window .icon-overflow-menu-horizontal:hover,
+.trello-dark-cards .window .ifeHxY:hover,
+.trello-dark-cards .window .jKipYA:hover,
 .trello-dark-cards .window .dark-hover:hover .icon-sm,
 .trello-dark-cards .window a:hover,
 .trello-dark-cards .window .dark-hover:hover,
